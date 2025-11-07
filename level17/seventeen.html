@@ -9,7 +9,16 @@
         @tailwind base;
         @tailwind components;
         @tailwind utilities;
-        
+        .card { 
+            @apply bg-white rounded-lg shadow-lg p-6; 
+        }
+        .badge { 
+            @apply inline-flex items-center px-3 py-1 rounded-full text-sm font-semibold;
+        }
+        .input-field { 
+            @apply border-2 border-gray-300 rounded-lg px-4 py-2 focus:border-blue-500 focus:outline-none w-full; 
+        }
+
         /* Create your component classes here using @apply */
         
     </style>
@@ -19,7 +28,7 @@
         <div class="bg-white rounded-lg shadow-lg p-6">
             <h2 class="text-2xl font-bold mb-4">Product Card</h2>
             <p class="text-gray-600 mb-4">This is a product description.</p>
-            <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-semibold bg-green-100 text-green-800">In Stock</span>
+            <span .badge-success { @apply bg-green-100 text-green-800; } class="inline-flex items-center px-3 py-1 rounded-full text-sm font-semibold bg-green-100 text-green-800">In Stock</span>
         </div>
         
         <form class="mt-6 bg-white rounded-lg shadow-lg p-6">
